@@ -3,9 +3,11 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import {Image} from "astro:assets";
 
-import bg_banner from "../assets/background/background_main.jpg";
-import logo from "../assets/appImage/logo.svg";
+import bg_banner from "../assets/background/bg_main.jpg";
+import bg_creation from "../assets/background/bg_creation.svg"
 
+import logo from "../assets/appImage/logo.svg";
+import vertrix_design from "../assets/appImage/vertrix_design.jpg"
 ---
 
 <Layout title="Vertrix">
@@ -16,9 +18,9 @@ import logo from "../assets/appImage/logo.svg";
                 class="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="absolute inset-0 bg-black/50"/>
 
-        <div class="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
+        <div class="relative z-2 flex h-full flex-col items-center justify-center px-4 text-center">
 
             <Image
                     src={logo}
@@ -36,10 +38,20 @@ import logo from "../assets/appImage/logo.svg";
         </div>
     </section>
 
+    <section class="flex justify-center h-screen">
     <div> Servicios </div>
+    </section>
 
-    <section class="flex justify-center">
-        <div class="flex w-8/10 justify-center gap-4">
+    <section class="relative flex justify-center items-center h-screen text-white">
+        <Image
+                src={bg_creation}
+                alt="background_banner"
+                class="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div class="absolute inset-0 bg-black/50"/>
+
+        <div class="relative flex z-2 w-8/10 justify-center gap-4">
             <div class="flex-col items-center w-1/2">
                 <h2>Creación de vertrix</h2>
                 <p>
@@ -49,10 +61,16 @@ import logo from "../assets/appImage/logo.svg";
                 </p>
             </div>
             <div class="flex-col items-center w-1/2">
-                <div>Images</div>
+                <Image
+                        src={vertrix_design}
+                        alt="Logo Vertrix"
+                        class="h-[650px] w-auto"
+                />
             </div>
         </div>
     </section>
+
     <div> Miembros</div>
+
     <div> Asignaciones </div>
 </Layout>
