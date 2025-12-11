@@ -1,12 +1,12 @@
 ---
 
-import logo from "../assets/appImage/logo.png";
+import logo from "../assets/appImage/logo.svg";
 import {Image} from "astro:assets";
 
 ---
 
 <header class="bg-black flex justify-center text-white">
-    <div class="flex justify-between px-6 w-8/10">
+    <div class="flex justify-between px-6 w-90/100">
         <a href="/" class="flex items-center gap-2">
             <Image
                 src={logo}
@@ -14,14 +14,14 @@ import {Image} from "astro:assets";
                 class="h-[100px] w-auto"
             />
         </a>
-        <div class="flex items-center gap-5 px-4">
-            <a href="/" class="flex items-center gap-2 mx-4 ">
+        <div class="flex items-center gap-x-5 px-4">
+            <a href="/" class="flex items-center gap-x-2 mx-4 ">
                 <span class="text-xl">Compañia</span>
             </a>
-            <a href="/servicios" class="flex items-center gap-2 mx-4">
+            <a href="/servicios" class="flex items-center gap-x-2 mx-4">
                 <span class="text-xl">Servicios</span>
             </a>
-            <a href="/blog" class="flex items-center gap-2 mx-4">
+            <a href="/blog" class="flex items-center gap-x-2 mx-4">
                 <span class="text-xl">Blog</span>
             </a>
         </div>
