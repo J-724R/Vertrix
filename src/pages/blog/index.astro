@@ -1,12 +1,58 @@
 ---
 import BlogLayout from '../../layouts/Blog.astro';
+import BlogArticleCard from "../../components/BlogArticleCard.astro";
+import logo from "../../assets/appImage/logo.svg";
+import {Image} from "astro:assets";
 
 ---
-
 <BlogLayout title="Vertix Blog">
-    <div> Banner </div>
-    <div> Servicios </div>
-    <div> Creacion de Vertrix</div>
-    <div> Miembros</div>
-    <div> Asignaciones </div>
+        <div class="text-6xl my-5"> Conce las ultimas novedades de Vertrix </div>
+        <BlogArticleCard
+                date="Diciembre 12, 2025"
+                title="Actividad 4"
+                previewText="Descripcion de la actividad (Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.)"
+                actividad="actividad_4"
+        >
+                <Image
+                        src={logo}
+                        alt="Logo Vertrix"
+                        class="w-full h-auto"
+                />
+        </BlogArticleCard>
+        <BlogArticleCard
+                date="Diciembre 6, 2025"
+                title="Productos ¿sin sentido?"
+                previewText="Descripcion de la actividad (Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.)"
+                actividad="actividad_3"
+        >
+                <Image
+                        src={logo}
+                        alt="Logo Vertrix"
+                        class="w-full h-auto"
+                />
+        </BlogArticleCard>
+        <BlogArticleCard
+                date="Noviembre 28, 2025"
+                title="Visita a una empresa"
+                previewText="Descripcion de la actividad (Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.)"
+                actividad="actividad_2"
+        >
+                <Image
+                        src={logo}
+                        alt="Logo Vertrix"
+                        class="w-full h-auto"
+                />
+        </BlogArticleCard>
+        <BlogArticleCard
+                date="Noviembre 21, 2025"
+                title="Encuestas"
+                previewText="Descripcion de la actividad (Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.)"
+                actividad="actividad_1"
+        >
+                <Image
+                        src={logo}
+                        alt="Logo Vertrix"
+                        class="w-full h-auto"
+                />
+        </BlogArticleCard>
 </BlogLayout>

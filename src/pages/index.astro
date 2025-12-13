@@ -87,24 +87,43 @@ import vertrix_design from "../assets/appImage/vertrix_design.jpg"
                 class="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div class="relative flex flex-col items-center z-2 w-85/100 ">
-            <div> Miembros </div>
-            <div class="flex gap-5">
-                <Image
-                        src={member_1}
-                        alt="Vertrix team member"
-                        class="h-[150px] w-auto"
-                />
-                <Image
-                        src={member_2}
-                        alt="Vertrix team member"
-                        class="h-[150px] w-auto"
-                />
-                <Image
-                        src={member_3}
-                        alt="Vertrix team member"
-                        class="h-[150px] w-auto"
-                />
+        <div class="relative flex flex-col items-center z-2 gap-8 h-[600px] w-85/100 ">
+            <div class="text-7xl mb-20"> Miembros de Vertrix</div>
+            <div class="flex justify-between gap-6 w-8/10">
+                <div class="flex flex-col items-center">
+                    <Image
+                            src={member_1}
+                            alt="Vertrix team member"
+                            class="h-[150px] w-auto"
+                    />
+                    <div class="flex flex-col items-center">
+                        Betania Ramírez
+                        <span>Diseñadora & Creativa Visual</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <Image
+                            src={member_2}
+                            alt="Vertrix team member"
+                            class="h-[150px] w-auto"
+                    />
+                    <div class="flex flex-col items-center">
+                        Brayler Guerrero
+                        <span>Analista y Estratega</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <Image
+                            src={member_3}
+                            alt="Vertrix team member"
+                            class="h-[150px] w-auto"
+                    />
+                    <div class="flex flex-col items-center">
+                        Javier Pernia
+                        <span>Desarrollador de Software </span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
