@@ -1,0 +1,15 @@
+---
+
+import BlogArticle from "../../layouts/BlogArticle.astro";
+import logo from "../../assets/appImage/logo.svg";
+import {Image} from "astro:assets";
+
+---
+<BlogArticle title="Visita a una empresa" date="Noviembre 21, 2025">
+        <Image
+                slot="banner"
+                src={logo}
+                alt="Logo Vertrix"
+                class="w-full h-auto"
+        />
+</BlogArticle>
