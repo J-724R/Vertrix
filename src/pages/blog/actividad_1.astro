@@ -1,11 +1,12 @@
 ---
 
 import BlogArticle from "../../layouts/BlogArticle.astro";
+import Gallery from "../../components/BlogPost/gallery.astro"
 import logo from "../../assets/appImage/logo.svg";
 import {Image} from "astro:assets";
 
 ---
-<BlogArticle title="Visita a una empresa" date="Noviembre 21, 2025">
+<BlogArticle title="JUGUETES INNOVADORES" date="Noviembre 29, 2025">
         <Image
                 slot="banner"
                 src={logo}
@@ -13,9 +14,8 @@ import {Image} from "astro:assets";
                 class="w-full h-auto"
         />
         <p>
-            parrafo 1
+            El pasado 29 de noviembre de 2025, se realizó una visita al Centro Comercial Sambil. Durante el recorrido, se inspeccionaron diversas tiendas con el objetivo de identificar productos con diseños atípicos, objetos de funcionalidad ambigua y juguetes con características singulares o innovadoras:
         </p>
-        <p>
-            parrafo 1
-        </p>
+
+
 </BlogArticle>
