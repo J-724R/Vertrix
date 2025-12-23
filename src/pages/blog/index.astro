@@ -4,58 +4,99 @@ import BlogArticleCard from "../../components/BlogArticleCard.astro";
 import logo from "../../assets/appImage/logo.svg";
 import {Image} from "astro:assets";
 
+import act_1 from "../../assets/Blog/Act_1/banner.png"
+
 ---
 <BlogLayout title="Vertix Blog">
-        <div class="text-6xl my-5"> Conce las ultimas novedades de Vertrix </div>
+        <div class="text-6xl my-5"> Conoce las ultimas novedades de Vertrix </div>
         <BlogArticleCard
-                date="Diciembre 12, 2025"
-                title="Actividad 4"
-                previewText="Descripcion de la actividad (Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.)"
-                activity="actividad_4"
+                date="Diciembre 22, 2025"
+                title="Encuesta y Niveles de Importancia"
+                previewText="Se uso la escala de likert para determinar los niveles de importancia"
+                activity="actividad_7"
         >
                 <Image
                         src={logo}
                         alt="Logo Vertrix"
-                        class="w-full h-auto"
+                        class="object-cover"
                 />
         </BlogArticleCard>
 
         <BlogArticleCard
-                date="Diciembre 6, 2025"
-                title="Productos ¿sin sentido?"
-                previewText="Descripcion de la actividad (Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.)"
+            date="Diciembre 20, 2025"
+            title="Necesidades Detectadas"
+            previewText="A partir de la 'Voz del Cliente', se identificaron las principlaes necesidades del productos"
+            activity="actividad_6"
+        >
+                <Image
+                    src={logo}
+                    alt="Logo Vertrix"
+                    class="object-cover"
+                />
+        </BlogArticleCard>
+
+        <BlogArticleCard
+            date="Diciembre 19, 2025"
+            title="Benchmarking"
+            previewText="Se realizó una recopilación audiovisual basada en una búsqueda en Amazon, aplicando los filtros de 'más vendidos' y 'mejores marcas'."
+            activity="actividad_5"
+        >
+                <Image
+                    src={logo}
+                    alt="Logo Vertrix"
+                    class="object-cover"
+                />
+        </BlogArticleCard>
+
+        <BlogArticleCard
+            date="Diciembre 14, 2025"
+            title="Nuevas Entrevistas y Primeros Conceptos"
+            previewText="Se tuvo como objetivo refinar el proceso de recolección de datos previo e identificar las 20 variables críticas necesarias del producto."
+            activity="actividad_4"
+        >
+                <Image
+                    src={logo}
+                    alt="Logo Vertrix"
+                    class="object-cover"
+                />
+        </BlogArticleCard>
+
+        <BlogArticleCard
+                date="Diciembre 1, 2025"
+                title="Primeras Entrevistas"
+                previewText="Se inició la recopilación de información mediante visitas a talleres de motocicletas y la aplicación de una encuesta digital en Google Forms."
                 activity="actividad_3"
         >
                 <Image
                         src={logo}
                         alt="Logo Vertrix"
-                        class="w-full h-auto"
+                        class="object-cover"
                 />
         </BlogArticleCard>
 
         <BlogArticleCard
                 date="Noviembre 28, 2025"
-                title="Encuestas"
-                previewText="Descripcion de la actividad (Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.)"
+                title="Visita a UNICARS MOTOR'S"
+                previewText="Se exploro el  modelo de trabajo de esta pequeña empresa desde, los proveedores hasta resolucion de problemas internos y externos."
                 activity="actividad_2"
         >
             <Image
                     src={logo}
                     alt="Logo Vertrix"
-                    class="w-full h-auto"
+                    class="object-cover"
             />
         </BlogArticleCard>
 
         <BlogArticleCard
-                date="Noviembre 21, 2025"
-                title="Visita a una empresa"
-                previewText="Descripcion de la actividad (Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.)"
+                date="Noviembre 30, 2025"
+                title="Juguetes Innovadores"
+                previewText="Se inspeccionaron diversas tiendas con el objetivo de identificar productos con diseños atípicos, y/o innovadoras."
                 activity="actividad_1"
         >
                 <Image
-                        src={logo}
+                        src={act_1}
                         alt="Logo Vertrix"
-                        class="w-full h-auto"
+                        class="objects cover"
                 />
         </BlogArticleCard>
 </BlogLayout>

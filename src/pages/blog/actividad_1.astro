@@ -2,20 +2,23 @@
 
 import BlogArticle from "../../layouts/BlogArticle.astro";
 import Gallery from "../../components/BlogPost/gallery.astro"
-import logo from "../../assets/appImage/logo.svg";
+import banner from "../../assets/Blog/Act_1/banner.png";
 import {Image} from "astro:assets";
 
 ---
-<BlogArticle title="JUGUETES INNOVADORES" date="Noviembre 29, 2025">
+<BlogArticle title="JUGUETES INNOVADORES" date="Noviembre 30, 2025">
         <Image
                 slot="banner"
-                src={logo}
-                alt="Logo Vertrix"
-                class="w-full h-auto"
+                src={banner}
+                alt="banner Vertrix"
+                class="w-full"
         />
-        <p>
-            El pasado 29 de noviembre de 2025, se realizó una visita al Centro Comercial Sambil. Durante el recorrido, se inspeccionaron diversas tiendas con el objetivo de identificar productos con diseños atípicos, objetos de funcionalidad ambigua y juguetes con características singulares o innovadoras:
-        </p>
+
+        <div  >
+            <div>
+                El pasado 29 de noviembre de 2025, se realizó una visita al Centro Comercial Sambil. Durante el recorrido, se inspeccionaron diversas tiendas con el objetivo de identificar productos con diseños atípicos, objetos de funcionalidad ambigua y juguetes con características singulares o innovadoras:
+            </div>
 
 
+        </div>
 </BlogArticle>
