@@ -1,14 +1,15 @@
 ---
 
 import BlogArticle from "../../layouts/BlogArticle.astro";
-import logo from "../../assets/appImage/logo.svg";
 import {Image} from "astro:assets";
+
+import banner from "../../assets/Blog/Act_3/banner.png"
 
 ---
 <BlogArticle title="Primeras Entrevistas" date="Noviembre 28, 2025">
         <Image
                 slot="banner"
-                src={logo}
+                src={banner}
                 alt="Logo Vertrix"
                 class="w-full h-auto"
         />
